@@ -1,0 +1,278 @@
+body {
+	background: #FFFFFF;
+}
+
+#report_content > tr > td {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	vertical-align: top;
+}
+
+tr:nth-child(n+3) {
+	border-top: 1px solid lightgrey;
+}
+
+#search{
+	margin: 20px 50px 30px;
+}
+
+#search_title {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.16px;
+	color: #8C8C8C;
+}
+
+#select_box{
+	cursor: pointer;
+}
+
+.box{
+	background: #FFFFFF;
+	width: 220px;
+	height: 30px;
+	margin-right: 15px;
+	border: 1px solid #E9E9E9;
+	box-sizing: border-box;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	align-items: center;
+	letter-spacing: 0.16px;
+	color: #353535;
+}
+
+#search_box{
+	width: 210px;
+}
+
+#search_button {
+	width: 90px;
+	height: 40px;
+	background: #353535;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 3px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.16px;
+	color: #FFFFFF;
+	cursor: pointer;
+	
+}
+
+* {
+	font-family: TT Norms;
+	font-style: normal;
+}
+
+#device_name{
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	color: #353535;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.model_font{
+	color: #4990E2;
+}
+
+#report_generation{
+	width: 180px;
+	height: 40px;
+	background: #4990E2;
+	border-radius: 3px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	display: inline-block;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.16px;
+	color: #FFFFFF;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	cursor: pointer;
+}
+
+#raw > p {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 15px;
+	color: #8C8C8C;
+}
+
+b {
+    font-weight: 500;
+    color: #353535;
+}
+
+label {
+	color: #353535;
+}
+
+.forinp {
+	display: inline-block;
+}
+
+#flex_container {
+	flex-direction: row;
+	margin-right: 50px;
+	margin-left: 50px;
+	display: none;
+}
+
+#flex_container > .flex_item {
+	flex: auto;
+    padding-top: 0px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+    flex-grow: 1;
+}
+
+div.flex_item > table {
+	margin-bottom: 40px;
+}
+
+#device_img {
+	height: 55px;
+	width: 55px;
+}
+
+#device_td {
+	vertical-align: top;
+	padding-right: 20px;
+	padding-top: 5px;
+}
+
+#device_td1 {
+	width: 225px;
+}
+
+#flex_container > .raw_item {
+	width: 25rem;
+    flex-grow: 2;
+    margin-top: 7px;
+    padding: 20px;
+	background: #F7F7F7;
+	border-radius: 5px;
+}
+
+#report_page{
+	display: none;
+	background: #FFFFFF;
+	border: 1px dashed #939DA6;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+	margin-right: 50px;
+	margin-left: 50px;
+	margin-top: 46px;
+	padding-top: 40px;
+	padding-left: 40px;
+}
+
+#report_name{
+	font-size: 16px;
+	line-height: 19px;
+	color: #000000;
+	font-weight: 700;
+}
+
+#report_table_name{
+	font-size: 13px;
+	line-height: 15px;
+	color: #939DA6;
+}
+
+#report_content {
+    width: 95%;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+.report_font{
+	font-size: 16px;
+	line-height: 19px;
+	color: #353535;
+}
+
+.report_font1{
+	font-size: 13px;
+	line-height: 15px;
+	color: #353535;
+}
+
+.report_font2{
+	font-size: 15px;
+	line-height: 17px;
+	color: #353535;
+}
+
+.report_font3{
+	font-size: 15px;
+	line-height: 17px;
+	color: #353535;
+}
+
+.icon_size{
+	width: 16px;
+	height: 16px;
+}
+
+.circle {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.circle input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  border: 2px solid #C1C1C1;
+  
+}
+
+.circle:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.circle input:checked ~ .checkmark {
+  background-color: #FFFFFF;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.circle input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.circle .checkmark:after {
+ 	top: 3px;
+	left: 3px;
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+	background: #4990E2;
+}

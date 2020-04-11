@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="style_kas.css" rel="stylesheet" type="text/css">
+    <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css">
+    <script src="data.json" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <title>KAS_task</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+<body>
+	<div id="search">
+		  <p id="search_title">Enter inventory number, guid or bims id</p>
+        <form>
+		  <input class="forinp box" id="search_box" type="search">
+		  <input class="forinp" id="search_button" type="button" value="Search" onclick="searchData()">
+        </form>
+    </div>
+
+<div id="flex_container">
+    <div class="flex_item">
+            <table>
+            <tr> 
+            <td id="device_td"><img src="icons/libra.PNG" alt="libra" id="device_img">
+            </td>
+            <td id="device_td1"><p id="device_name"></p>
+            </td>
+            </tr>
+            </table>
+        <form>
+            <select class="box" id="select_box">
+                <option value="3">1 year</option>
+                <option value="2">6 months</option>
+                <option value="1">1 month</option>
+            </select><br><br>
+            <label class="circle"> Calibration<input type="radio" name="n1" checked="checked" value="Calibration"><span class="checkmark"></span></label>
+            <label class="circle"> Measuring<input type="radio" name="n1" value="Measuring"><span class="checkmark"></span></label>
+            <label class="circle"> Using<input type="radio" name="n1" value="Using"><span class="checkmark"></span></label><br><br>
+            <input id="report_generation" type="button" value="Generate report" onclick="generateReport()">
+        </form>
+    </div>
+
+    <div class="raw_item" id="raw">
+        <p>Тип оборудования: <b id="type"></b></p>
+        <p>Статус: <b id="status"></b></p>
+        <p>Изготовитель: <b id="made"></b></p>
+        <p>Модель: <b id="model"></b></p>
+        <p>Ответственное подразделение (ремонт): <b id="repair"></b></p>
+        <p>Эксплуатирующее подразделение: <b id="users"></b></p>
+        <p>МОЛ: <b id="mol"></b></p>
+        <p>Территория: <b id="place"></b></p>
+        <p>Серийный номер: <b id="number"></b></p>
+        <p>GUID: <b id="guid" class="model_font"></b></p>
+        <p>Bims ID: <b id="bid" class="model_font"></b></p>
+        <p>Tam: <b id="tam" class="model_font"></b></p>
+    </div>
+</div>
+
+    <div id="report_page">
+    	<p id="report_name"></p>
+    	<table id="report_content">
+            <tr id="report_table_name">
+            	<td> Data </td>
+            	<td> Used buffer solutions </td>
+            	<td colspan="2"> Slope, %<br>Norm 95-105 </td>
+            	<td colspan="2"> Offset, mV<br>Norm ±(0-20) </td>
+            	<td> User </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
